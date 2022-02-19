@@ -5,7 +5,7 @@ const Thumbnail = forwardRef(({ item }, ref) => {
   const base_url = 'https://image.tmdb.org/t/p/original'
   return (
     <div
-      red={ref}
+      ref={ref}
       className="group cursor-pointer p-2 transistion-all duration-200 ease-in transform sm:hover:scale-105 hover:z-40"
     >
       <Image
