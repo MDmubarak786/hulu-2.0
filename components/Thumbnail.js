@@ -13,7 +13,7 @@ const Thumbnail = forwardRef(({ item }, ref) => {
         src={`${base_url}${item.poster_path}`}
         height={1080}
         width={1920}
-        className="object-contain"
+        objectFit="contain"
       />
       <div className="p-2">
         <p className="truncate max-w-md">{item.overview}</p>

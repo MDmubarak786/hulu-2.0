@@ -1,11 +1,12 @@
 import Head from 'next/head'
-import Header from '../components/Header'
-import NavBar from '../components/NavBar'
-import Results from '../components/Results'
+import dynamic from 'next/dynamic'
 import requests from '../utills/request'
 
+const Header = dynamic(() => import('../components/Header'))
+const NavBar = dynamic(() => import('../components/NavBar'))
+const Results = dynamic(() => import('../components/Results'))
+
 export default function Home({ results }) {
-  console.log('results', results)
   return (
     <div>
       <Head>
